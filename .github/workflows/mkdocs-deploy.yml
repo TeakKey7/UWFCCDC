@@ -36,11 +36,13 @@ jobs:
         env:
           MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          cd mkdocs
           mkdocs build
 
       - name: Deploy to GitHub Pages using GITHUB_TOKEN
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          cd mkdocs
           mkdocs gh-deploy --force --remote-branch gh-pages
 
