@@ -6,8 +6,8 @@ exclude_docs: |
 plugins:
   - git-committers:
       repository: TeakKey7/UWFCCDC
-      branch: master
-      docs_path: /
+      branch: main
+      docs_path: ./
   - git-revision-date-localized:
       enable_creation_date: true
 markdown_extensions:
