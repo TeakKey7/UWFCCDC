@@ -1,11 +1,11 @@
 site_name: 'UWF CCDC'  # Customize your site name
-repo_url: https://github.com/TeakKey7/UWFCCDC.git 
+repo_url: https://github.com/bkemily/UWFCCDC.git 
 docs_dir: root/
 exclude_docs: |
   mkdocs/root
 plugins:
   - git-committers:
-      repository: TeakKey7/UWFCCDC
+      repository: bkemily/UWFCCDC
       branch: main
       docs_path: ./
   - git-revision-date-localized:
@@ -24,5 +24,3 @@ use_directory_urls: true
   # navigation_depth: 1  # Prevent headers from being used as links
 theme:
   name: material  # You can replace with another theme if preferred
-  logo:
-    icon: material/server-security
